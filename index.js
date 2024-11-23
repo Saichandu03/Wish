@@ -59,7 +59,7 @@ function createStars() {
 
 function createEmoji() {
   
-  const emojis = ["💖", "⭐", "✨", "🎉", "🎂", "🎈"];
+  const emojis = ["💖", "⭐", "✨", "🎉", "🎂", "🎈" , "🤗" ,"🎁" , "🥳" , "🤩"];
   const emoji = document.createElement("div");
   emoji.className = "emoji";
   emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
@@ -127,7 +127,7 @@ muteButton.addEventListener("click", () => {
     }
   });
   // Update button text
-  // muteButton.textContent = isMuted ? "🔇" : "🔊";
+  muteButton.textContent = isMuted ? "🔇" : "🔊";
 });
 async function makeChoice(choice) {
   clearInterval(emojiInterval);
@@ -243,8 +243,8 @@ function createFireWorks() {
   fireworksStarted = true; // Set flag to true indicating the animation has started
 
   let chars, particles, canvas, ctx, w, h, current;
-  let duration = 3500; // Total duration of the animation for each string
-  let str = ["Happy", "Birthday", "Priya"];
+  let duration = 5000; // Total duration of the animation for each string
+  let str = ["Happy", "Birthday", "Priya" , "Thank You" , "For Being" , "With Me!"];
   let startTime = null; // To track the start time of the animation
   let totalDuration = str.length * duration; // Total duration for all strings
 
